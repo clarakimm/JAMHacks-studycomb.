@@ -1,0 +1,21 @@
+
+{% load static %}
+
+{% block styles %}
+    <style> 
+    .video {
+        width: 100%;
+        max-width: 800px;
+        height: 500px;
+        border: 0px;
+        display: block;
+        margin: 0px auto;
+    }</style>
+    <script type="text/javascript" src="{% static 'js/run.js' %}"></script>
+{% endblock %}
+
+{% block content %} 
+
+    <iframe allow="camera; microphone; fullscreen; display-capture" src="https://meet.jit.si/studycombecon" class="video"></iframe>
+
+    {% endblock %}

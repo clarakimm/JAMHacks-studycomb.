@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+	 rel="stylesheet">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<style>
+		.orange {
+			background-color: #FDAA22;
+		}
+
+		.orangetext {
+			color: #FDAA22;
+		}
+
+		.blue {
+			background-color: #4152F3;
+		}
+    .lightorange{
+    background-color:#FEEED4;
+}
+		html {
+			scroll-behavior: smooth;
+		}
+
+	</style>
+    
+</head>
+
+<body style="font-family: Roboto;">
+	<script src="script.js">
+
+	</script>
+	<!----nav bar --->
+	<section class="w-full px-8 orange">
+		<div class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+			<div class="relative flex flex-col md:flex-row">
+				<p class="flex items-center mb-5 font-medium text-3xl text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0">studycomb.</p>
+				<nav class="flex flex-wrap items-center mb-5 text-base md:mb-0 md:pl-20 md:ml-20 md:border-l md:border-gray-200">
+					<a href="index.html" class="mr-20 font-medium leading-6 text-white hover:text-gray-900">Home</a>
+					<a href="index.html#about" class="mr-20 font-medium leading-6 text-white hover:text-gray-900">About Us</a>
+					<a href="index.html#features" class="mr-20 font-medium leading-6 text-white hover:text-gray-900">Features</a>
+					<a href="index.html#faq" class="mr-20 font-medium leading-6 text-white hover:text-gray-900">Frequently Asked Questions</a>
+				</nav>
+			</div>
+
+			<div class="inline-flex items-center ml-5 space-x-8 lg:justify-end">
+				<a href="login/" class="inline-flex items-center justify-center px-10 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap border border-transparent rounded-md shadow-sm hover:bg-blue-400 blue">Login</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Taglines-->
+	<section class="px-2 py-32 bg-white md:px-0">
+		<div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+			<div class="flex flex-wrap items-center sm:-mx-3">
+				<div class="w-full md:w-1/2 md:px-3">
+					<div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0">
+						<h1 class="text-4xl font-extrabold tracking-tight text-black sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl">
+							<span class="block xl:inline">Let's be productive</span>
+          <span class="block xl:inline orangetext">together.</span>
+        </h1>
+        <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">Become a Student Bee and gain access to a hive of fellow students who will help you learn, socialize, organize, and stay healthy. </p>
+        <div class="relative flex flex-col sm:flex-row sm:space-x-4">
+          <a href="login.html" class="flex items-center w-full px-24 py-3 mb-3 text-lg text-white rounded-md sm:mb-0 hover:bg-blue-400 sm:w-auto blue">
+            Join Now
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2">
+      <div class="w-full h-auto overflow-hidden rounded-md sm:rounded-xl">
+          {% load static %}
+    <img src="{% static '/example.jpg' %}" alt="My image"><img src="image3.png" class="">
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- About Us -->
+<section id= "about" class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+    <h2 class="text-5xl font-bold tracking-tight text-center">About Us</h2>
+    <div class="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+            
+        <div class="box-border relative w-full max-w-md px-4 mt-5 mb-4 -ml-5 text-center bg-no-repeat bg-contain border-solid md:ml-0 md:mt-0 md:max-w-none lg:mb-0 md:w-1/2 xl:pl-10">
+            <img src="image4.png" class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20">
+        </div>
+
+        <div class="box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none">
+            <h2 class="m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl">"Individually, we are each one bee. Together, we are a studycomb.”</h2>
+            <p class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg">Studycomb was designed by students for students. As students ourselves, we know that integrating accountability, social interaction, time management, and physical &amp; mental well being into our student life is essential to student success. With the COVID-19 pandemic preventing in-person classes, it has been more difficult than ever for students to include these practices in their study habits. Studycomb combines these 4 core values into a web application that students can use to improve their studying habits and supplement online school. </p>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="py-20 bg-white">
+        <div class="container max-w-6xl mx-auto">
+            <h2 class="font-bold tracking-tight text-center text-5xl">Features</h2>
+            <div class="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0 ">
+                <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 lightorange space-y-4 overflow-hidden sm:rounded-xl">
+                    <div class="p-8 text-white orange rounded-full">
+                            <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="24 / music / volume-off">
+                                <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M36 38.7812L54 29.7812V78.2189L36 69.2189V38.7812ZM30.4377 31.5001L63 15.2189V92.7812L30.4378 76.5001H13.5C8.52944 76.5001 4.5 72.4706 4.5 67.5001V40.5001C4.5 35.5295 8.52944 31.5001 13.5 31.5001H30.4377ZM27 40.5H13.5V67.5H27V40.5ZM68.8181 43.6819L75.1821 37.3179L85.5001 47.6359L95.8181 37.3179L102.182 43.6819L91.864 53.9999L102.182 64.3179L95.8181 70.6819L85.5001 60.3639L75.1821 70.6819L68.8181 64.3179L79.1361 53.9999L68.8181 43.6819Z" fill="black"/>
+                                </g>
+                                </svg>    
+                    </div>
+                    <p class="text-base text-center text-2xl text-black">Quiet Study Rooms</p>
+                </div>
+    
+                <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 lightorange space-y-4 overflow-hidden sm:rounded-xl">
+                        <div class="p-8 text-white orange rounded-full">
+                                <svg width="83" height="82" viewBox="0 0 83 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M37.0397 17.3757C39.4568 20.028 38.6904 23.0327 36.5533 25.8837C36.0466 26.5597 35.4625 27.2257 34.7571 27.9596C34.4185 28.3118 34.1545 28.5768 33.6023 29.124C32.3481 30.3667 31.2938 31.4109 30.4393 32.2567C30.025 32.6668 32.854 38.2629 38.3443 43.7031C43.8317 49.1404 49.4846 51.9428 49.9009 51.5304L53.0616 48.3999C54.8022 46.6752 55.724 45.843 56.9907 45.0204C59.6239 43.3103 62.4961 42.8456 64.9185 44.9898C72.8277 50.5902 77.3035 54.0269 79.4962 56.2822C83.773 60.6811 83.2125 67.4524 79.5204 71.3152C78.2402 72.6547 76.6169 74.2625 74.6996 76.0922C63.102 87.579 38.6256 80.5885 19.8671 62.0013C1.10438 43.4098 -5.95362 19.1784 5.61969 7.71581C7.69743 5.62673 8.38248 4.94894 10.406 2.97521C14.1735 -0.69951 21.3294 -1.2749 25.6795 2.97885C27.9676 5.21633 31.6155 9.8625 37.0397 17.3757ZM58.8927 54.1742L55.7313 57.3053C50.3576 62.6277 41.2061 58.0909 32.5127 49.4768C23.8132 40.8567 19.2353 31.8011 24.6108 26.4803C25.4641 25.6357 26.5174 24.5925 27.7706 23.3507C28.2762 22.8497 28.5075 22.6176 28.7851 22.3287C29.1634 21.9352 29.4742 21.5896 29.7231 21.2838C24.9159 14.6551 21.6481 10.5132 19.8865 8.79054C18.9767 7.90089 16.9395 8.06469 16.1916 8.79417C14.197 10.7397 13.5413 11.3884 11.472 13.4689C4.02917 20.8406 9.72688 40.4019 25.6988 56.228C41.6657 72.0492 61.4237 77.692 68.9231 70.2652C70.8105 68.4631 72.3486 66.9397 73.5325 65.7011C74.3879 64.8061 74.5408 62.9592 73.5568 61.9471C71.9178 60.2613 67.9051 57.1643 60.9765 52.2389C60.4715 52.6413 59.8506 53.225 58.8927 54.1742ZM52.4367 35.5573L74.2699 13.9446V28.5866H82.5199V0.00325292H53.6449V8.16992H68.4362L46.6031 29.7826L52.4367 35.5573Z" fill="black"/>
+                                    </svg>
+                        </div>
+                        <p class="text-base text-center text-2xl text-black">Group Study Rooms</p>
+                    </div>
+    
+                    <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 lightorange space-y-4 overflow-hidden sm:rounded-xl">
+                            <div class="p-8 text-white orange rounded-full">
+                                    <svg width="99" height="95" viewBox="0 0 99 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="24 / basic / star">
+                                        <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M23.0761 56.0253L17.6286 87.7869L46.1523 72.7911L74.676 87.7869L69.2284 56.0253L92.3046 33.5316L60.4141 28.8977L46.1523 0L31.8904 28.8977L0 33.5316L23.0761 56.0253ZM60.7221 53.2613L64.1616 73.3149L46.1523 63.8469L28.1429 73.3149L31.5824 53.2613L17.0126 39.0592L37.1476 36.1334L46.1523 17.888L55.1569 36.1334L75.2919 39.0592L60.7221 53.2613Z" fill="black"/>
+                                        </g>
+                                        </svg>                                        
+                            </div>
+                            <p class="text-base text-center text-2xl text-black"><i>Bee</i> Game Nights</p>
+                        </div>
+    
+                        <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 lightorange space-y-4 overflow-hidden sm:rounded-xl">
+                                <div class="p-8 text-white orange rounded-full">
+                                        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="24 / basic / heart">
+                                            <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M66.2129 8.00006C60.4222 7.99999 56.6896 8.68986 52.4106 10.7843C50.8264 11.5597 49.3402 12.4936 47.9599 13.583C46.6328 12.5546 45.2059 11.6637 43.6872 10.9125C39.3253 8.7551 35.4011 8 29.8182 8C14.8657 8 4 20.3891 4 36.4795C4 48.631 10.7753 60.3691 23.3954 71.7196C30.0196 77.6774 38.4773 83.5733 44.5344 86.7099L48 88.5045L51.4656 86.7099C57.5227 83.5733 65.9804 77.6774 72.6046 71.7196C85.2247 60.3691 92 48.631 92 36.4795C92 20.5594 81.0318 8.06143 66.2129 8.00006ZM84 36.4795C84 45.9996 78.3447 55.7973 67.2549 65.7714C61.2087 71.2094 53.4358 76.6437 48 79.4948C42.5642 76.6437 34.7913 71.2094 28.7451 65.7714C17.6553 55.7973 12 45.9996 12 36.4795C12 24.5909 19.5346 16 29.8182 16C34.2571 16 36.9925 16.5264 40.1405 18.0834C42 19.0031 43.6435 20.2175 45.0661 21.7351L48.0093 24.8748L50.9258 21.7102C52.3804 20.1318 54.048 18.8898 55.9277 17.9697C58.9835 16.474 61.548 16 66.1963 16C76.3528 16.0421 84 24.7559 84 36.4795Z" fill="black"/>
+                                            </g>
+                                            </svg>
+                                </div>
+                                <p class="text-base text-center text-2xl text-black"><i>Bee</i> Networking</p>
+                            </div>
+    
+              <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 lightorange space-y-4 overflow-hidden sm:rounded-xl">
+                                <div class="p-8 text-white orange rounded-full">
+                                        <svg width="106" height="106" viewBox="0 0 106 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="24 / basic / video">
+                                            <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M13.25 22.0834H66.25C71.1285 22.0834 75.0833 26.0382 75.0833 30.9167V37.0204L101.583 23.7704V82.2297L75.0833 68.9796V75.0834C75.0833 79.9619 71.1285 83.9167 66.25 83.9167H13.25C8.37144 83.9167 4.41663 79.9619 4.41663 75.0834V30.9167C4.41663 26.0382 8.37144 22.0834 13.25 22.0834ZM75.0833 59.1037L92.75 67.937V38.063L75.0833 46.8963V59.1037ZM13.25 30.9167V75.0834H66.25V30.9167H13.25Z" fill="black"/>
+                                            </g>
+                                            </svg>
+                                            
+                                </div>
+                                <p class="text-base text-center text-2xl text-black">Weekly Workshops</p>
+                            </div>
+    
+       <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 lightorange space-y-4 overflow-hidden sm:rounded-xl">
+                                <div class="p-8 text-white orange rounded-full">
+                                        <svg width="99" height="99" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="24 / file / clipboard-checked">
+                                            <path id="icon" fill-rule="evenodd" clip-rule="evenodd" d="M37.1082 8.25C40.2113 5.62227 44.7114 4.125 49.5 4.125C54.2886 4.125 58.7887 5.62227 61.8918 8.25H66C70.5564 8.25 74.25 11.9436 74.25 16.5L78.375 16.5C82.9314 16.5 86.625 20.1937 86.625 24.75V86.625C86.625 91.1814 82.9314 94.875 78.375 94.875H20.625C16.0687 94.875 12.375 91.1814 12.375 86.625V24.75C12.375 20.1937 16.0687 16.5 20.625 16.5L24.75 16.5C24.75 11.9436 28.4437 8.25 33 8.25H37.1082ZM66 28.875C69.0537 28.875 71.7198 27.2159 73.1463 24.75H78.375V86.625H20.625V24.75H25.8537C27.2802 27.2159 29.9463 28.875 33 28.875H66ZM63.0832 42.4581L45.375 60.1663L35.9168 50.7081L30.0832 56.5417L45.375 71.8335L68.9168 48.2917L63.0832 42.4581ZM40.6627 16.5L41.8962 15.0784C43.2514 13.5166 46.1563 12.375 49.5 12.375C52.8437 12.375 55.7486 13.5166 57.1038 15.0784L58.3373 16.5H66V20.625H33V16.5H38.7806H40.6627Z" fill="black"/>
+                                            </g>
+                                            </svg>
+                                </div>
+                                <p class="text-base text-center text-2xl text-black">Daily Well-Being Checklists</p>
+                            </div>
+            </div>
+        </div>
+    </section>
+
+<!--FAQ-->
+<section class="py-24 bg-white text-black">
+        <div class="px-8 mx-auto max-w-7xl lg:px-16">
+            <h1 class="mb-4 text-5xl font-bold text-center">Frequently Asked Questions</h1>
+            <div>
+                    <h2 class="mt-10 mb-3 font-semibold ">Who can join and become a bee?</h2>
+                    <p >Any student can become a student bee! Studycomb is primarily created for university students and students completing school online but any student can join as long as they pass our verification process!</p>
+                    <h2 class="mt-10 mb-3 font-semibold ">Why is a verification process necessary?</h2>
+                    <p >Due to the nature of video calls, we want to protect the privacy of all our student bees by ensuring that all student bees are real students who want to learn. This process ensures we can create a safe, and welcoming learning environment for all our bees. </p>
+                    <h2 class="mt-10 mb-3 font-semibold ">How will study rooms, social events, and workshops run? </h2>
+                    <p>When you make an account, you will gain access to your own personal student nest where you can find the links to each of these events. These events will be run primarily through Jitzi.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="mt-10 mb-3 font-semibold ">How much does it cost?</h2>
+                    <p >Nothing! We know how much it costs to be a student; we created Studycomb with equity and accessibility in mind which is why we rely on student bee  participation to help run our study rooms, social rooms, and workshops. </p>
+                    <h2 class="mt-10 mb-3 font-semibold ">Independent Study room VS Group Study room?</h2>
+                    <p >In independent study rooms, the host will be leading student bees through common quiet studying techniques like the Pomodoro Method. In group study rooms, student bees can sign up to host  rooms where they can teach material to other bees which will help solidify their understanding of the topic through the Protégé Effect. Fellow student bees can attend these teaching rooms to learn a new topic or review a topic they have already learned. </p>
+                    <h2 class="mt-10 mb-3 font-semibold ">How do I join?</h2>
+                    <p >Click the Login/Register bottom at the top right of our screen to get started with our verification process! Make sure to use your school email so we can verify your identity!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<section class="blue">
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"> 
+      <p class="mt-8 text-base leading-6 text-center text-gray-400">
+        👽 2021 Teresa, Clara, Gabriel and Omar
+      </p>
+  </div>
+</section>
+</body>
+
+</html>
